@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mona Sans", sans-serif;
+    background-color: var(--background-primary-color);
+}
+
+:root {
+    --header-bg-color: rgba(11, 13, 19, 0.7);
+    --background-primary-color: #24292e;
+    --background-secondary-color: #181623;
+    --background-therdiary-color: #fafbfc;
+    --background-quartiary-color: #ffffff;
+    --background-quintiary-color: #2dba4e;
+
+    --default-color: #2dba4e;
+    --defalut-secondary-color: #9340e1;
+
+    --border-default-color: #3d444d;
+
+    --font-primary-color: white;
+}
