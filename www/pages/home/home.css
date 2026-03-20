@@ -4,34 +4,56 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 92vh;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    padding-top: 2.5rem;
+    min-height: 92vh;
+    padding: 2.5rem 15rem;
     color: var(--font-primary-color);
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .cli-alt-1 {
     color: var(--defalut-secondary-color);
-    font-weight: bolder;
+    font-weight: bold;
 }
 
-.subtittle {
-    font-size: 40px;
+.cli-alt-1::after {
+    content: "_";
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
 
-    .subtittle-alt-2 {
-        color: var(--default-color);
+@keyframes blink {
+    50% {
+        opacity: 0;
     }
+}
+
+.subtitle {
+    font-size: 2.5rem;
+}
+
+.subtitle-alt {
+    color: var(--default-color);
 }
 
 .short-desc {
     display: flex;
     gap: 0.5rem;
+    flex-wrap: wrap;
+}
 
-    .short-desc-alt-1 {
-        color: var(--default-color);
-    }
+.short-desc-alt {
+    color: var(--default-color);
 }
 
 .me {
@@ -39,38 +61,38 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-
-    .my-photo {
-        width: 20rem;
-        height: 20rem;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid var(--border-default-color);
-    }
 }
 
-.sender-buttons-div {
+.my-photo {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--border-default-color);
+}
+
+.sender-buttons {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.sender-div {
+.sender-icons {
     display: flex;
     gap: 0.5rem;
+}
 
-    button {
-        background-color: var(--default-color);
-        padding: 0.2rem;
-        border: none;
-        border-radius: 7px;
-        cursor: pointer;
-    }
+.sender-icons button {
+    background-color: var(--default-color);
+    border: none;
+    border-radius: 7px;
+    padding: 0.3rem;
+    cursor: pointer;
+}
 
-    img {
-        width: 3rem;
-        height: 3rem;
-    }
+.sender-icons img {
+    width: 3rem;
+    height: 3rem;
 }
 
 .freela-button {
@@ -79,7 +101,24 @@ main {
     background-color: var(--default-color);
     color: var(--font-primary-color);
     border: none;
-    font-weight: bolder;
+    font-weight: bold;
     border-radius: 7px;
     cursor: pointer;
+}
+
+.freela-button:hover {
+    box-shadow: 0 0 10px var(--default-color);
+}
+
+button {
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
 }

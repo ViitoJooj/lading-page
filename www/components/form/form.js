@@ -1,54 +1,72 @@
-import api_url from "../../scripts.js";
+import apiUrl from "../../scripts.js";
 
-class form extends HTMLElement {
+class MyForm extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({ mode: 'open' });
+        this.attachShadow({ mode: "open" });
     }
 
     connectedCallback() {
-        this.shadowRoot.innerHTML = `     
+        this.render();
+        this.handleSubmit();
+    }
+
+    render() {
+        this.shadowRoot.innerHTML = `
             <form id="contact-form">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-                <textarea id="message"></textarea>
+                <label>
+                    Nome:
+                    <input type="text" name="nome" required>
+                </label>
+
+                <label>
+                    E-mail:
+                    <input type="email" name="email" required>
+                </label>
+
+                <label>
+                    Mensagem:
+                    <textarea name="message" required></textarea>
+                </label>
+
                 <button type="submit">Enviar</button>
             </form>
         `;
+    }
 
+    handleSubmit() {
         const form = this.shadowRoot.querySelector("#contact-form");
 
-        form.addEventListener("submit", async (e) => {
-            e.preventDefault();
+        form.addEventListener("submit", this.onSubmit.bind(this));
+    }
 
-            const data = {
-                nome: form.nome.value,
-                email: form.email.value,
-                message: form.message.value
-            };
+    async onSubmit(e) {
+        e.preventDefault();
 
-            try {
-                const response = await fetch(api_url, {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify(data)
-                });
+        const form = e.target;
 
-                if (response.ok) {
-                    console.log("Enviado com sucesso!");
-                } else {
-                    console.error("Erro ao enviar");
-                }
+        const data = Object.fromEntries(new FormData(form));
 
-            } catch (err) {
-                console.error("Erro na requisição:", err);
+        try {
+            const response = await fetch(apiUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (!response.ok) {
+                throw new Error("Erro ao enviar");
             }
-        });
+
+            console.log("Enviado com sucesso!");
+            form.reset();
+
+        } catch (error) {
+            console.error("Erro:", error.message);
+        }
     }
 }
 
-customElements.define('my-form', form);
+customElements.define("my-form", MyForm);
