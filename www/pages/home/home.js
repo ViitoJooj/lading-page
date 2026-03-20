@@ -29,12 +29,15 @@ class home extends HTMLElement {
                 </div>
             </div>
 
-            <div class="sender-buttons-div">
-                <div class="sender-div">
-                    <button><img src="./assets/imgs/github.svg" alt="github-icon"></button>
-                    <button><img src="./assets/imgs/linkedin.svg" alt="github-icon"></button>
+            <div class="me">
+                <img class="my-photo" src="./assets/imgs/me.png" alt="me-photo">
+                <div class="sender-buttons-div">
+                    <div class="sender-div">
+                        <button><img src="./assets/imgs/github.svg" alt="github-icon"></button>
+                        <button><img src="./assets/imgs/linkedin.svg" alt="github-icon"></button>
+                    </div>
+                    <button class="freela-button">Precisa de um freela ?</button>
                 </div>
-                <button class="freela-button">Precisa de um freela ?</button>
             </div>
         </main>
         `;
