@@ -1,33 +1,34 @@
-class header extends HTMLElement {
-    constructor(){
-        super();
-        this.attachShadow({ mode: 'open' });
-    }
+class Header extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: "open" });
+  }
 
-    connectedCallback() {
-        this.shadowRoot.innerHTML =`        
+  connectedCallback() {
+    this.render();
+  }
+
+  render() {
+    this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="./components/header/header.css">
-
         <header>
-            <div class="home-name">
-                <div class="icon">
-                    <p>J</p>
-                </div>
-                <h1>ViitoJooj</h1>
+            <div class="logo">
+                <p class="bar"><</p>
+                <p class="dev">dev</p>
+                <p class="bar">/></p>
             </div>
 
-
-            <div class="nav-links">
-                <a>Sobre mim</a>
-                <a>Habilidades</a>
-                <a>Experiencia</a>
+            <div class="navbar">
+                <a>Sobre</a>
+                <a>Stack</a>
                 <a>Projetos</a>
-                <a>Certificações</a>
                 <a>Contato</a>
             </div>
+
+            <button class="hire-me-button">Hire me</button>
         </header>
-        `;
-    }
+    `;
+  }
 }
 
-customElements.define('my-header', header);
+customElements.define("component-header", Header);

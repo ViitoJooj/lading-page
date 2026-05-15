@@ -1,28 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
-
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Mona Sans", sans-serif;
-    background-color: var(--background-primary-color);
+    margin: 0;
+    font-family: Inter, sans-serif;
+    color: var(--primary-font-color);
 }
 
 :root {
-    --header-bg-color: rgba(11, 13, 19, 0.7);
-    --background-primary-color: #24292e;
-    --background-secondary-color: #181623;
-    --background-therdiary-color: #fafbfc;
-    --background-quartiary-color: #ffffff;
-    --background-quintiary-color: #2dba4e;
+    --primary-bg-color: #210207;
+    --secondary-bg-color: #140f17;
 
-    --default-color: #2dba4e;
-    --defalut-secondary-color: #9340e1;
+    --primary-border-color: #480415;
 
-    --border-default-color: #3d444d;
+    --primary-font-color: #ffff;
+    --secondary-font-color: #730c1e;
+    --thirdary-font-color: #a07080;
 
-    --font-primary-color: white;
+    --jetbrains-font: "JetBrainsMono", sans-serif;
+}
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("./assets/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter/Inter_18pt-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
