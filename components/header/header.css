@@ -33,8 +33,14 @@ header {
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     border-radius: 7px;
-    border: 1px solid rgb(157, 157, 157);
+    border: 1px solid var(--primary-border-color);
     background-color: transparent;
     color: var(--primary-font-color);
     cursor: pointer;
+    transition: border-color .2s, color .2s;
+}
+
+.hire-me-button:hover {
+    border-color: var(--secondary-font-color);
+    color: var(--secondary-font-color);
 }

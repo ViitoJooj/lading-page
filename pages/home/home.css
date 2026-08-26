@@ -44,7 +44,7 @@ main {
     display: inline-block;
     width: 2px;
     height: 15px;
-    background-color: var(--secondary-font-color);
+    background-color: var(--thirdary-font-color);
     animation: blink 1s step-end infinite;
     vertical-align: middle;
 }
@@ -55,13 +55,13 @@ main {
 }
 
 .hero {
-    padding: 100px 10% 72px;
+    padding: 110px 10% 88px;
     border-bottom: 1px solid var(--primary-border-color);
 
     .hero-tag {
         font-family: var(--jetbrains-font);
         font-size: 11px;
-        color: var(--secondary-font-color);
+        color: var(--thirdary-font-color);
         letter-spacing: 2px;
         margin-bottom: 16px;
         display: flex;
@@ -73,7 +73,7 @@ main {
             display: inline-block;
             width: 24px;
             height: 1px;
-            background-color: var(--secondary-font-color);
+            background-color: var(--thirdary-font-color);
         }
     }
 
@@ -116,7 +116,7 @@ main {
         .stat-num {
             font-size: 28px;
             font-weight: 900;
-            color: var(--secondary-font-color);
+            color: var(--primary-font-color);
         }
 
         .stat-label {
@@ -163,13 +163,13 @@ main {
 }
 
 .section {
-    padding: 64px 10%;
+    padding: 80px 10%;
     border-bottom: 1px solid var(--primary-border-color);
 
     .sec-label {
         font-family: var(--jetbrains-font);
         font-size: 11px;
-        color: var(--secondary-font-color);
+        color: var(--thirdary-font-color);
         letter-spacing: 2px;
         margin-bottom: 6px;
     }
@@ -199,7 +199,7 @@ main {
         justify-content: center;
         font-size: 32px;
         font-weight: 900;
-        color: var(--secondary-font-color);
+        color: var(--primary-font-color);
         font-family: var(--jetbrains-font);
     }
 
@@ -224,7 +224,7 @@ main {
             padding: 4px 12px;
             font-family: var(--jetbrains-font);
             font-size: 11px;
-            color: var(--secondary-font-color);
+            color: var(--thirdary-font-color);
         }
     }
 }
@@ -256,7 +256,7 @@ main {
             .stack-pct {
                 font-family: var(--jetbrains-font);
                 font-size: 11px;
-                color: var(--secondary-font-color);
+                color: var(--thirdary-font-color);
             }
         }
 
@@ -268,7 +268,7 @@ main {
 
             .stack-fill {
                 height: 100%;
-                background-color: var(--secondary-font-color);
+                background-color: var(--thirdary-font-color);
                 border-radius: 2px;
             }
         }
@@ -335,7 +335,7 @@ main {
                 .proj-lang {
                     font-family: var(--jetbrains-font);
                     font-size: 11px;
-                    color: var(--secondary-font-color);
+                    color: var(--thirdary-font-color);
                 }
 
                 .proj-stats-mini {
@@ -350,7 +350,7 @@ main {
 
                 .proj-arrow {
                     font-size: 14px;
-                    color: var(--secondary-font-color);
+                    color: var(--primary-font-color);
                 }
             }
         }
@@ -359,7 +359,7 @@ main {
 
 .gh-modal {
     background-color: var(--secondary-bg-color);
-    border: 1px solid var(--secondary-font-color);
+    border: 1px solid var(--primary-border-color);
     border-radius: 10px;
     padding: 18px;
     margin-top: 14px;
@@ -376,7 +376,7 @@ main {
         .gh-repo-name {
             font-family: var(--jetbrains-font);
             font-size: 13px;
-            color: var(--secondary-font-color);
+            color: var(--primary-font-color);
             font-weight: 700;
         }
 
@@ -413,7 +413,7 @@ main {
             padding: 4px 12px;
             font-size: 11px;
             font-family: var(--jetbrains-font);
-            color: var(--secondary-font-color);
+            color: var(--thirdary-font-color);
         }
     }
 
@@ -433,7 +433,7 @@ main {
             .gh-stat-val {
                 font-size: 20px;
                 font-weight: 900;
-                color: var(--secondary-font-color);
+                color: var(--primary-font-color);
             }
 
             .gh-stat-lbl {
@@ -478,7 +478,7 @@ main {
             font-size: 13px;
             color: var(--thirdary-font-color);
 
-            i { color: var(--secondary-font-color); font-size: 16px; }
+            i { color: var(--thirdary-font-color); font-size: 16px; }
         }
 
         .status-box {

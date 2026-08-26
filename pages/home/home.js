@@ -64,20 +64,19 @@ class Home extends HTMLElement {
         <div class="sec-label">// 02</div>
         <h2 class="sec-title">minhas <span>stacks</span></h2>
         <div class="stacks-grid">
-          <div class="stack-card"><div class="stack-name">Golang <span class="stack-pct">90%</span></div><div class="stack-bar"><div class="stack-fill" style="width:90%"></div></div></div>
-          <div class="stack-card"><div class="stack-name">SvelteKit <span class="stack-pct">85%</span></div><div class="stack-bar"><div class="stack-fill" style="width:85%"></div></div></div>
-          <div class="stack-card"><div class="stack-name">React <span class="stack-pct">80%</span></div><div class="stack-bar"><div class="stack-fill" style="width:80%"></div></div></div>
-          <div class="stack-card"><div class="stack-name">PostgreSQL <span class="stack-pct">75%</span></div><div class="stack-bar"><div class="stack-fill" style="width:75%"></div></div></div>
+          <div class="stack-card"><div class="stack-name">Go <span class="stack-pct">92%</span></div><div class="stack-bar"><div class="stack-fill" style="width:92%"></div></div></div>
+          <div class="stack-card"><div class="stack-name">TypeScript <span class="stack-pct">85%</span></div><div class="stack-bar"><div class="stack-fill" style="width:85%"></div></div></div>
+          <div class="stack-card"><div class="stack-name">Rust <span class="stack-pct">70%</span></div><div class="stack-bar"><div class="stack-fill" style="width:70%"></div></div></div>
+          <div class="stack-card"><div class="stack-name">Svelte <span class="stack-pct">85%</span></div><div class="stack-bar"><div class="stack-fill" style="width:85%"></div></div></div>
+          <div class="stack-card"><div class="stack-name">React <span class="stack-pct">78%</span></div><div class="stack-bar"><div class="stack-fill" style="width:78%"></div></div></div>
+          <div class="stack-card"><div class="stack-name">Astro <span class="stack-pct">65%</span></div><div class="stack-bar"><div class="stack-fill" style="width:65%"></div></div></div>
+          <div class="stack-card"><div class="stack-name">PostgreSQL <span class="stack-pct">80%</span></div><div class="stack-bar"><div class="stack-fill" style="width:80%"></div></div></div>
           <div class="stack-card"><div class="stack-name">MongoDB <span class="stack-pct">70%</span></div><div class="stack-bar"><div class="stack-fill" style="width:70%"></div></div></div>
-          <div class="stack-card"><div class="stack-name">SQLite<span class="stack-pct">82%</span></div><div class="stack-bar"><div class="stack-fill" style="width:82%"></div></div></div>
-          <div class="stack-card"><div class="stack-name">HTML<span class="stack-pct">90%</span></div><div class="stack-bar"><div class="stack-fill" style="width:90%"></div></div></div>
-          <div class="stack-card"><div class="stack-name">CSS<span class="stack-pct">82%</span></div><div class="stack-bar"><div class="stack-fill" style="width:82%"></div></div></div>
-          <div class="stack-card"><div class="stack-name">JavaScript<span class="stack-pct">82%</span></div><div class="stack-bar"><div class="stack-fill" style="width:82%"></div></div></div>
-          <div class="stack-card"><div class="stack-name">TypeScript<span class="stack-pct">82%</span></div><div class="stack-bar"><div class="stack-fill" style="width:82%"></div></div></div>
-          <div class="stack-card"><div class="stack-name">Azure<span class="stack-pct">82%</span></div><div class="stack-bar"><div class="stack-fill" style="width:82%"></div></div></div>
-          <div class="stack-card"><div class="stack-name">Linux<span class="stack-pct">82%</span></div><div class="stack-bar"><div class="stack-fill" style="width:82%"></div></div></div>
-          <div class="stack-card"><div class="stack-name">Jest<span class="stack-pct">82%</span></div><div class="stack-bar"><div class="stack-fill" style="width:82%"></div></div></div>
-        
+          <div class="stack-card"><div class="stack-name">SQLite <span class="stack-pct">75%</span></div><div class="stack-bar"><div class="stack-fill" style="width:75%"></div></div></div>
+          <div class="stack-card"><div class="stack-name">Docker <span class="stack-pct">80%</span></div><div class="stack-bar"><div class="stack-fill" style="width:80%"></div></div></div>
+          <div class="stack-card"><div class="stack-name">AWS <span class="stack-pct">65%</span></div><div class="stack-bar"><div class="stack-fill" style="width:65%"></div></div></div>
+          <div class="stack-card"><div class="stack-name">Terraform <span class="stack-pct">60%</span></div><div class="stack-bar"><div class="stack-fill" style="width:60%"></div></div></div>
+          <div class="stack-card"><div class="stack-name">Linux <span class="stack-pct">85%</span></div><div class="stack-bar"><div class="stack-fill" style="width:85%"></div></div></div>
          </div>
       </section>
 

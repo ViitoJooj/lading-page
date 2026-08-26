@@ -3,17 +3,18 @@
     margin: 0;
     font-family: Inter, sans-serif;
     color: var(--primary-font-color);
+    line-height: 1.5;
 }
 
 :root {
-    --primary-bg-color: #210207;
-    --secondary-bg-color: #140f17;
+    --primary-bg-color: #0d0c0f;
+    --secondary-bg-color: #17161b;
 
-    --primary-border-color: #480415;
+    --primary-border-color: #2b2a30;
 
-    --primary-font-color: #ffff;
-    --secondary-font-color: #730c1e;
-    --thirdary-font-color: #a07080;
+    --primary-font-color: #f5f5f7;
+    --secondary-font-color: #a4193d;
+    --thirdary-font-color: #9b98a3;
 
     --jetbrains-font: "JetBrainsMono", sans-serif;
 }
