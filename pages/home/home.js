@@ -22,7 +22,7 @@ class Home extends HTMLElement {
           <span class="cursor-dot"></span>Fullstack Developer
         </div>
         <h1 class="hero-name">
-          Olá, eu sou<br><em>João Vitor</em>
+          <span class="hero-name-lead">Olá, eu sou</span><em>João Vitor</em>
         </h1>
         <div class="hero-sub">
           &gt; construindo interfaces que
@@ -30,7 +30,6 @@ class Home extends HTMLElement {
         </div>
         <div class="hero-btns">
           <button class="btn-primary">ver projetos</button>
-          <button class="btn-outline">baixar cv</button>
         </div>
         <div class="hero-stats">
           <div><div class="stat-num">60+</div><div class="stat-label">PROJETOS</div></div>
@@ -43,18 +42,67 @@ class Home extends HTMLElement {
         <div class="sec-label">// 01</div>
         <h2 class="sec-title">sobre <span>mim</span></h2>
         <div class="about-grid">
-          <div class="avatar">SN</div>
-          <div>
-            <p class="about-text">
-              Desenvolvedor <strong>Fullstack</strong> apaixonado por criar soluções que unem design e performance.
-              Do banco de dados até a interface, eu cuido de cada camada da aplicação.<br><br>
-              Quando não estou codando, estou estudando novas tecnologias ou contribuindo para projetos <strong>open source</strong>.
-            </p>
-            <div class="about-badges">
-              <span class="badge">open source</span>
-              <span class="badge">clean code</span>
-              <span class="badge">agile</span>
-              <span class="badge">remote-first</span>
+          <p class="about-text">
+            Desenvolvedor <strong>Fullstack</strong> apaixonado por criar soluções que unem design e performance.
+            Do banco de dados até a interface, eu cuido de cada camada da aplicação.<br><br>
+            Quando não estou codando, estou estudando novas tecnologias ou contribuindo para projetos <strong>open source</strong>.
+          </p>
+          <div class="about-badges">
+            <span class="badge">open source</span>
+            <span class="badge">clean code</span>
+            <span class="badge">agile</span>
+            <span class="badge">remote-first</span>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"><span class="timeline-year">2022</span><span class="timeline-dot"></span></div>
+            <div class="timeline-body">
+              <div class="timeline-title">comecei a programar</div>
+              <div class="timeline-desc">Por conta própria, explorando lógica e os primeiros projetos.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"><span class="timeline-year">2023</span><span class="timeline-dot"></span></div>
+            <div class="timeline-body">
+              <div class="timeline-title">garçom</div>
+              <div class="timeline-desc">Pizzaria A Favoritta, em Jaboticabal-SP.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"><span class="timeline-year">2024</span><span class="timeline-dot"></span></div>
+            <div class="timeline-body">
+              <div class="timeline-title">editor de vídeo</div>
+              <div class="timeline-desc">3dMonkey, 8 meses editando vídeo antes de voltar de vez pro código.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"><span class="timeline-year">mar/2024</span><span class="timeline-dot"></span></div>
+            <div class="timeline-body">
+              <div class="timeline-title">início da faculdade</div>
+              <div class="timeline-desc">Sistemas de Informação, na Faculdade São Luís de Jaboticabal.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"><span class="timeline-year">out/2024</span><span class="timeline-dot"></span></div>
+            <div class="timeline-body">
+              <div class="timeline-title">dev full stack (estágio)</div>
+              <div class="timeline-desc">Global Trade Technology: sistema de IA para automação de relatórios, migrado de Python pra Rust, com PostgreSQL, OpenAI e Svelte.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"><span class="timeline-year">nov/2025</span><span class="timeline-dot"></span></div>
+            <div class="timeline-body">
+              <div class="timeline-title">analista de sistemas jr.</div>
+              <div class="timeline-desc">B. Tobace Instalações Elétricas e Telefônicas.</div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"><span class="timeline-year">hoje</span><span class="timeline-dot timeline-dot--current"></span></div>
+            <div class="timeline-body">
+              <div class="timeline-title">engenheiro de software jr.</div>
+              <div class="timeline-desc"><strong>TOTVS</strong>, atuando desde março de 2026.</div>
             </div>
           </div>
         </div>
@@ -165,7 +213,6 @@ class Home extends HTMLElement {
     `;
   }
 
-  // Usa this.shadowRoot.getElementById em vez de document.getElementById
   initTypewriter() {
     const phrases = ["fazem sentido.", "impressionam.", "escalam.", "resolvem problemas."];
     let pi = 0, ci = 0, deleting = false;

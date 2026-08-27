@@ -25,6 +25,15 @@ header {
     display: flex;
     gap: 2rem;
     color: var(--thirdary-font-color);
+
+    a {
+        cursor: pointer;
+        transition: color .2s;
+    }
+
+    a:hover {
+        color: var(--primary-font-color);
+    }
 }
 
 .hire-me-button {

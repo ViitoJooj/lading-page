@@ -14,9 +14,13 @@
 
     --primary-font-color: #f5f5f7;
     --secondary-font-color: #a4193d;
+    --secondary-font-color-rgb: 164, 25, 61;
     --thirdary-font-color: #9b98a3;
 
     --jetbrains-font: "JetBrainsMono", sans-serif;
+    --fraunces-font: "Fraunces", serif;
+
+    --noise-texture: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
 
 @font-face {
@@ -32,5 +36,13 @@
   src: url("./assets/fonts/Inter/Inter_18pt-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("./assets/fonts/Fraunces/Fraunces-Italic-Variable.ttf") format("ttf");
+  font-weight: 300 900;
+  font-style: italic;
   font-display: swap;
 }

@@ -12,7 +12,7 @@ class Footer extends HTMLElement {
         this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="./components/footer/footer.css">
         <footer>
-            <p>© 2026 — feito com <3 e muito café</p>
+            <p>© 2026, feito com <3 e muito café</p>
             
             <div class="redirects">
                 <a>Github</a>
